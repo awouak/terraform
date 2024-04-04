@@ -70,8 +70,17 @@ export ARM_TENANT_ID=<tenant>
 
 ## Terraform :
 
-Dans votre 
+Dans votre répertoire tapez
 
+'''
+terraform init
+'''
+'''
+terraform plan
+'''
+'''
+terraform apply
+'''
 ## Voir la page web :
 
 Pour voir la page web, rendez vous sur https://nom.azurewebsites.net
