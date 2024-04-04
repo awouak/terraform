@@ -15,7 +15,7 @@ L'objectif est le déploiement d'un groupe de ressource ou dans lequel on pourra
   
 - Un compte Microsoft Azure avec de l'argent
   
-- Terraform installé :https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+- Terraform installé : https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
   
 - Azure CLI installé : https://learn.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt
 
