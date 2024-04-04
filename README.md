@@ -24,6 +24,8 @@ L'objectif est le déploiement d'un groupe de ressource ou dans lequel on pourra
 Pour utiliser le projet, la 1ère étape est de mettre les différents fichier dans votre répertoire Github en mode "Public" puis de clone ce répertoire github sur votre machine.
 Vous pouvez utilisez le script ssh/sh pour copier le certificat ssh dans le bon répertoire (/home/azureuser/.ssh)
 
+## Mettre en place Azure sur sa machine Ubuntu
+
 #### 1: Se connecter à Azure
 
 az login
