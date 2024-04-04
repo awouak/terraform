@@ -1,5 +1,14 @@
 # Répertoire du TP3 Terraform
 
+## Objectifs
+
+L'objectif est le déploiement d'un groupe de ressource ou dans lequel on pourrait retoruver:
+
+- Une VM Azure avec une ip public sur lequel on peut se connecter en ssh avec un certificat.
+  
+- Un compte de stockage
+  
+
 ## Elements requis :
 
 - Un répertoire Github en Public
@@ -13,8 +22,7 @@
 ## Repertoire Github :
 
 Pour utiliser le projet, la 1ère étape est de mettre les différents fichier dans votre répertoire Github en mode "Public" puis de clone ce répertoire github sur votre machine.
-
-## Azure
+Vous pouvez utilisez le script ssh/sh pour copier le certificat ssh dans le bon répertoire (/home/azureuser/.ssh)
 
 #### 1: Se connecter à Azure
 
@@ -92,11 +100,6 @@ Pour détruire la configuration
 ```
 terraform destroy
 ```
-## Voir la page web :
+## Azure :
 
-Pour voir la page web, rendez vous sur https://nom.azurewebsites.net
-
-Vous devriez voir normalement votre application Flask (Cela peux prendre 10min à s'afficher il faut etre patient)
-
-Vous pouvez voir le status du déploiement dans "Service d'applications' et dans 'Overview' pour voir si le déploiement est toujours en cours ou terminé.
-Vous pouvez aussi consulté cela dans "Actions" sur votre répertoire Github.
+Vous pouvez vérifier maintenant la bonne création de la configuration sur votre compte Azure.
