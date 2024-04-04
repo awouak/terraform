@@ -40,32 +40,6 @@ az ad sp create-for-rbac --role="Contributor"
 
 --scopes="/subscriptions/<YourSubscriptionId>"
 ```
-Correspondance du résultat
-
-● appId = ARM_CLIENT_ID.
-
-● password = ARM_CLIENT_SECRET.
-
-● tenant = ARM_TENANT_ID.
-
-Exemple de résultat:
-
-json
-
-{
-
-"appId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-
-"displayName": "azure-cli-2020-04-01-10-31-17",
-
-"name": "http://azure-cli-2020-04-01-10-31-17",
-
-"password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-
-"tenant": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-
-}
-
 #### 4: Set des variables d’environnement
 ```
 export ARM_SUBSCRIPTION_ID=<SubscriptionId>
