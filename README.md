@@ -70,9 +70,12 @@ json
 ```
 export ARM_SUBSCRIPTION_ID=<SubscriptionId>
 ```
+```
 export ARM_CLIENT_ID=<appI>
 ```
+```
 export ARM_CLIENT_SECRET=<password>
+```
 ```
 export ARM_TENANT_ID=<tenant>
 ```
