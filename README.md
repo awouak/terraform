@@ -37,7 +37,7 @@ az account list --query "[].{name:name, subscriptionId:id}"
 #### 3: Création d’un Service Principal
 ```
 az ad sp create-for-rbac --role="Contributor"
-
+```
 --scopes="/subscriptions/<YourSubscriptionId>"
 ```
 Correspondance du résultat
