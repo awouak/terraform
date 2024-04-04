@@ -13,7 +13,7 @@ terraform {
 provider "azurerm" {
   features {}
 
-  subscription_id = "METSTONIDDESUSCRIPTION"
+  subscription_id = "c5ab6b94-f2b3-4669-90b6-c1c681d23add"
 }
 
 # Création de la ressource "azurerm_ressource_group" si elle n'est pas présente
