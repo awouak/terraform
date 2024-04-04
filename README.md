@@ -27,19 +27,19 @@ Vous pouvez utilisez le script ssh/sh pour copier le certificat ssh dans le bon 
 ## Mettre en place Azure sur sa machine Ubuntu
 
 #### 1: Se connecter à Azure
-
+```
 az login
-
+```
 #### 2: Récupération du Subscription ID
-
+```
 az account list --query "[].{name:name, subscriptionId:id}"
-
+```
 #### 3: Création d’un Service Principal
-
+```
 az ad sp create-for-rbac --role="Contributor"
 
 --scopes="/subscriptions/<YourSubscriptionId>"
-
+```
 Correspondance du résultat
 
 ● appId = ARM_CLIENT_ID.
@@ -67,15 +67,15 @@ json
 }
 
 #### 4: Set des variables d’environnement
-
+```
 export ARM_SUBSCRIPTION_ID=<SubscriptionId>
-
+```
 export ARM_CLIENT_ID=<appI>
-
+```
 export ARM_CLIENT_SECRET=<password>
-
+```
 export ARM_TENANT_ID=<tenant>
-
+```
 
 
 ## Terraform :
