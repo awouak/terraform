@@ -84,6 +84,14 @@ Pour appliquer la configuration :
 ```
 terraform apply
 ```
+Pour voir la configuration
+```
+terraform show
+```
+Pour détruire la configuration
+```
+terraform destroy
+```
 ## Voir la page web :
 
 Pour voir la page web, rendez vous sur https://nom.azurewebsites.net
