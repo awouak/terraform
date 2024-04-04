@@ -12,10 +12,65 @@
 
 ## Repertoire Github :
 
-Pour utiliser le projet, la 1ère étape est de mettre les différents fichier dans votre répertoire Github en mode "Public"
+Pour utiliser le projet, la 1ère étape est de mettre les différents fichier dans votre répertoire Github en mode "Public" puis de clone ce répertoire github sur votre machine.
 
-## Azure :
+## Azure
 
+#### 1: Se connecter à Azure
+
+az login
+
+#### 2: Récupération du Subscription ID
+
+az account list --query "[].{name:name, subscriptionId:id}"
+
+#### 3: Création d’un Service Principal
+
+az ad sp create-for-rbac --role="Contributor"
+
+--scopes="/subscriptions/<YourSubscriptionId>"
+
+Correspondance du résultat
+
+● appId = ARM_CLIENT_ID.
+
+● password = ARM_CLIENT_SECRET.
+
+● tenant = ARM_TENANT_ID.
+
+Exemple de résultat:
+
+json
+
+{
+
+"appId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+
+"displayName": "azure-cli-2020-04-01-10-31-17",
+
+"name": "http://azure-cli-2020-04-01-10-31-17",
+
+"password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+
+"tenant": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+}
+
+#### 4: Set des variables d’environnement
+
+export ARM_SUBSCRIPTION_ID=<SubscriptionId>
+
+export ARM_CLIENT_ID=<appI>
+
+export ARM_CLIENT_SECRET=<password>
+
+export ARM_TENANT_ID=<tenant>
+
+
+
+## Terraform :
+
+Dans votre 
 
 ## Voir la page web :
 
