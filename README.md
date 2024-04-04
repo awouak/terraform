@@ -1,6 +1,6 @@
 # Répertoire du TP3 Terraform
 
-## Objectifs
+## Objectif
 
 L'objectif est le déploiement d'un groupe de ressource ou dans lequel on pourrait retoruver:
 
